@@ -12,6 +12,7 @@ import Create from './routes/Create'
 
 function App() {
   return (
+<body>
     <div className="App">
 
 <Link to="/">Home</Link>
@@ -27,6 +28,8 @@ function App() {
       </Switch>
       
     </div>
+    </body>
+  
   )
 }
 
