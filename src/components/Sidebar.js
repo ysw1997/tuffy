@@ -1,23 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import { navigate,Link } from '@reach/router';
+import { Link} from 'react-router-dom';
+
 
 const Wrapper = styled.div`
 
-width: 30%;
-min-width:200px;
-  position: relative;
-  top: 100px;
-  left:70%;
+width:200px;
+float:right;
+  position: absolute;
+  top: -10px;
+  right:0px;
   padding:20px;
+  z-index: 1003;
+   animation: 0.5s ease-in-out;
 `
 
-const Model = styled.div`
-background-color:#f5657f;
- width: 200px;
-  min-height: 150px;
+const Model = styled(Link)`
+background-color:#FF7990;
+ width: 150px;
+  height: 125px;
    place-items: center;
-
   overflow-y: auto;
   z-index: 1003;
   position: relative;
@@ -25,27 +27,16 @@ background-color:#f5657f;
   flex-direction: column;
   margin:10px;
   border-radius: 15px;
-
- 
-
 `
 
 const Sidebar =() =>{
-    const navigateTo = link => {
-        
-        navigate(link);
-    };
-    
 
 return(
     <Wrapper>
-        <Model onClick={() => navigate('/create')} >Create</Model>
-        <Model>
-            
-          
-            </Model>
-        <Model>Play</Model>
-        <Model>Listen</Model>
+            <Model to="/art">Art</Model>
+            <Model to="/music">Music</Model>
+            <Model to="/videos">Videos</Model>
+            <Model to="/games">Games</Model>
     </Wrapper>
 )
 
