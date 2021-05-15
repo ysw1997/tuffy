@@ -7,7 +7,7 @@ import styled from 'styled-components';
 function Footer() {
 const Footer= styled.h5`
 background-color:#8DF67B;
-position: absolute;
+position: fixed;
 bottom: 0;
 width: 100%;
 height: 12rem;  
@@ -28,7 +28,7 @@ text-align:left;
 const Righttext= styled.h5`
 text-align:right;
 margin-top: 0px;
-margin-right:20px;
+margin-right:90px;
 `;
 
 
