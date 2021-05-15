@@ -34,8 +34,9 @@ function Home() {
         <div className="Home">    
             <Sidebar />
         </div>
-        <Footer />
+        
     </Wrapper>
+            <Footer />
     </Body>
     
     
