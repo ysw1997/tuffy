@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link} from 'react-router-dom';
-
+import './Sidebar.css'
+import arleeActive from '../assets/sidebarIcon/arleeActive.gif'
+import arleeStatic from '../assets/sidebarIcon/arleeStatic.png'
+import createActive from '../assets/sidebarIcon/createActive.gif'
+import createStatic from '../assets/sidebarIcon/createStatic.png'
+import playActive from '../assets/sidebarIcon/playActive.gif'
+import playStatic from '../assets/sidebarIcon/playStatic.png'
+import musicActive from '../assets/sidebarIcon/musicActive.gif'
+import musicStatic from '../assets/sidebarIcon/musicStatic.png'
 
 const Wrapper = styled.div`
 
@@ -18,7 +26,7 @@ float:right;
 const Model = styled(Link)`
 background-color:#FF7990;
  width: 150px;
-  height: 125px;
+  height: 140px;
    place-items: center;
   overflow-y: auto;
   z-index: 1003;
@@ -33,10 +41,23 @@ const Sidebar =() =>{
 
 return(
     <Wrapper>
-            <Model to="/art">Art</Model>
-            <Model to="/music">Music</Model>
-            <Model to="/videos">Videos</Model>
-            <Model to="/games">Games</Model>
+            
+            <Model to="/music">
+              <img class="static" src={musicStatic} alt='music' />
+              <img class="active" src={musicActive} alt='music' />
+              </Model>
+            <Model to="/videos">
+              <img class="static" src={arleeStatic} alt='video' />
+              <img class="active" src={arleeActive} alt='video' />
+            </Model>
+            <Model to="/games">
+              <img class="static" src={playStatic} alt='games' />
+              <img class="active" src={playActive} alt='games' />
+            </Model>
+            <Model to="/art">
+              <img class="static" src={createStatic} alt='create' />
+              <img class="active" src={createActive} alt='create' />
+            </Model>
     </Wrapper>
 )
 
