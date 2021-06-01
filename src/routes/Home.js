@@ -18,8 +18,8 @@ margin-bottom:60px;
 export const Img = styled.img`
 margin-top: 20px;
 margin-left: 20px;
-width: 40%;
-height: 40%;
+width: 20%;
+height: 20%;
 display: flex;
 `;
 
