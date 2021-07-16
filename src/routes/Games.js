@@ -20,8 +20,6 @@ function Games() {
             <div className="logo">
                 <Img src={tuffyLogo} alt="tuffyLogo" />
             </div>
-            <Sidebar />
-            <Footer />
         </GamesWrapper>
     );
 }

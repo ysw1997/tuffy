@@ -15,8 +15,8 @@ const Wrapper = styled.div`
 
 width:200px;
 float:right;
-  position: absolute;
-  top: -10px;
+  position: fixed;
+  top: 9%;
   right:0px;
   padding:20px;
   z-index: 1003;
@@ -44,6 +44,7 @@ return(
             
             <Model to="/music">
               <img class="static" src={musicStatic} alt='music' />
+              {/* <div class='active'>Sing</div> */}
               <img class="active" src={musicActive} alt='music' />
               </Model>
             <Model to="/videos">

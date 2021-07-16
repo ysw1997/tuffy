@@ -18,8 +18,8 @@ margin-bottom:60px;
 export const Img = styled.img`
 margin-top: 20px;
 margin-left: 20px;
-width: 20%;
-height: 20%;
+width: 200px;
+
 display: flex;
 `;
 
@@ -32,11 +32,9 @@ function Home() {
             <Img src={tuffyLogo} alt="tuffyLogo" />
         </div>
         <div className="Home">    
-            <Sidebar />
         </div>
         
     </Wrapper>
-            <Footer />
     </Body>
     
     

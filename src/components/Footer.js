@@ -19,18 +19,13 @@ function toInstagram() {
 function Footer() {
 const Footer= styled.footer`
 background-color:#8DF67B;
-position: fixed;
-font-size:10px;
-bottom: 0;
-width: 100%;
-height: 8rem;  
--webkit-border-top-left-radius:15px;
--webkit-border-top-right-radius:15px;
-align-items: center;
-
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
 `;
 
-const Lefttext= styled.footer`
+const Lefttext= styled.div`
 
 margin-top: 18px;
 margin-left:20px;
@@ -38,7 +33,7 @@ text-align:left;
 
 `;
 
-const Righttext= styled.footer`
+const Righttext= styled.div`
 text-align:right;
 margin-top: 0px;
 margin-right:90px;
@@ -79,12 +74,10 @@ onClick ={toYoutube}
 
 <Righttext>
 Legal 
-</Righttext>
-<Righttext>
+
   
 Donate
-</Righttext>
-<Righttext>
+
 Parent&Teacher
 </Righttext>
         </Footer>

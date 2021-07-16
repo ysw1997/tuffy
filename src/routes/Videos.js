@@ -19,8 +19,7 @@ function Videos() {
             <div className="logo">
                 <Img src={tuffyLogo} alt="tuffyLogo" />
             </div>
-            <Sidebar />
-            <Footer />
+       
         </VideoWrapper>
     );
 }
