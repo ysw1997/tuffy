@@ -13,6 +13,14 @@ import puzzle from "../assets/images/puzzle.png"
 import newsletter from "../assets/images/newsletter.png"
 import jellybean from "../assets/images/jellybean.png"
 import sendmail from "../assets/images/sendmail.png"
+import google from "../assets/images/google.png"
+import amazon from "../assets/icons/amazon.png"
+import itunes from "../assets/icons/itunes.svg"
+import spotify from "../assets/icons/spotify.png"
+
+
+
+
 
 const VideoWrapper = styled(ChildPageWrapper)`
 background-color: #CAFAC3;
@@ -28,9 +36,10 @@ font-weight:400;
   border-radius: 15px;
   font-size:24px;
   margin-bottom:100px;
-  font-family: Avenir;
+  font-family: Helvetica;
+
 font-style: normal;
-text-indent:2em;
+// text-indent:2em;
 text-align:left;
 padding-left:20px;
 padding-right:10px;
@@ -39,26 +48,28 @@ padding-bottom:50px;
 `
 
 const Resources = styled.div`
-background-color: #f4f5a1;
-margin-top:20px;
-margin-left:10px;
+// background-color: #f4f5a1;
+// margin-top:20px;
+// margin-left:10px;
 margin-right:10px;
   border-radius: 15px;
 padding-bottom:10px;
-// padding-top:50px;
+// padding-top:10px;
 min-height:160px;
 
 `
 const TitleImg = styled.img`
 margin-top:20px;
-float:left;
-width:250px;
+// float:left;
+width:400px;
 // margin-top:50px;
-max-height:150px;
+max-height:200px;
+//   margin-left:20px;
+margin-right:10px;
 
 `
 const Title = styled.div`
-text-align:center;
+// text-align:center;
 font-weight:600;
   font-size:32px;
 `
@@ -67,8 +78,23 @@ const P = styled.div`
 // left:320px;
 // width:650px;
 // // top:-50px;
-`
+// margin-left:20px;
+margin-right:10px;
+text-align-vertical: center;  
 
+`
+const Google = styled.img`
+// margin-left:50px;
+margin-top:20px;
+width:250px;
+`
+const Store = styled.img`
+width:200px;
+margin-right:30px;
+margin-top:10px;
+
+
+`
 function ParentTeacher() {
     return (
  
@@ -82,23 +108,27 @@ function ParentTeacher() {
             {/* <Footer /> */}
             <WordWrapper >
                 <Title> PARENTS & TEACHERS</Title>
-                <p>
+                <br />
+                <div>
                     Parents and teachers have an outstanding opportunity to teach and inspire a child when their curiosity is piqued and their imagination is stirred. 
                     This magic can be found in the adventures of Tuffy Tiger.  T. E. Young and the charitable community arts non-profit Puppetry Arts impacts thousands 
-                of individuals each year infusing puppetry in programs that engage youth and families.  </p>
-                <p>
+                of individuals each year infusing puppetry in programs that engage youth and families.  </div>
+                <br />
+                <div>
                     Tuffy Tiger is a great example of that puppetry. Curious, outgoing, clever, and almost five, Tuffy Tiger is an appealing character that becomes 
                     an important confidant and friend to the many, 
                     many kids that he engages every day, helping them to explore the world around them. Discovering and learning along with Tuffy through art and music 
                     provide that same opportunity for you and your child emphasizing educational goals, healthy choices, and social principles. Tuffy’s experiences reinforce positive life lessons and habits for children through his honorable, endearing, and gentle nature. 
-                </p>
+                </div>
+                <br />
                 <p>
                     Below are a few Tuffytastic resources that promise to engage and inspire your young tigers! 
                 </p>
+                <br />
                 <Resources>
                     <TitleImg src= {newsletter} />
                     <P>
-                That’s Tuffytastic Newsletter  (logo)
+                
 As an ambassador to parents and teachers, Tuffy Tiger helps to emphasize educational goals, healthy choices, and social principles through multimedia resources kids and parents love! 
 Spark creativity and engage family fun with the Tuffytastic E-Newsletter and stay up-to-date on all Tuffy Tiger music, videos, crafts, and news!
                     </P>
@@ -106,31 +136,32 @@ Spark creativity and engage family fun with the Tuffytastic E-Newsletter and sta
                 <Resources>
                     <TitleImg src={titleCd} />
                    <P>
-                    Tuffy Tiger’s first album filled with 10 fun and empowering songs including 5 instrumentals perfect for classroom sing-a-longs. Purchase the album through these stores.
+                        Tuffy Tiger’s first album filled with 10 fun and empowering songs including 5 instrumentals perfect for classroom sing-a-longs. Purchase the album through these stores.
 
-                    Download The Album’s Lyric Poster
+                        Download The Album’s Lyric Poster
+                        <br />
+                    <Store src={amazon} /><Store src={itunes} /><Store src={spotify} />
                     </P>
                 </Resources>
                 <Resources>
                     <TitleImg src={puzzle} />
 
                     <P>
-                        Tuffy Tiger’s Puzzle Game  ( with pic)
-                         
+                    
                         Colorful puzzles featuring the almost five Tuffy Tiger! Easy to slide into place using silhouette photo in the background with playful music and sounds!
-
-                        Free Google Play Download
+                                                 <br />
+                        <a href='https://play.google.com/store/apps/details?id=appinventor.ai_aribitowsky.TuffyApp&hl=en_US&gl=US'> <Google src={google} /></a>
                 </P>
                 </Resources>
                 <Resources>
                     <TitleImg src={jellybean} />
                     <P>
-                        Tuffy Tiger’s Jelly Bean Jam! (With Pic)
                         Tuffy Tiger can't wait for you to try out Jelly Bean Jam! It's a game filled with action and strategy making it fun for all ages!
 
-                        Free Google Play Download
+                         <br />
+                        <a href='https://play.google.com/store/apps/details?id=com.cleanclone&hl=en&gl=US'> <Google src = {google}/></a>
 
-                        https://play.google.com/store/apps/details?id=com.cleanclone&hl=en&gl=US
+                        
                 </P>
                 </Resources>
                 <Resources>
