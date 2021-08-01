@@ -19,7 +19,7 @@ float:right;
   top: 9%;
   right:0px;
   padding:20px;
-  z-index: 1003;
+  z-index: -1;
    animation: 0.5s ease-in-out;
 `
 
@@ -29,7 +29,7 @@ background-color:#FF7990;
   height: 140px;
    place-items: center;
   overflow-y: auto;
-  z-index: 1003;
+  z-index: 1;
   position: relative;
   display: fixed;
   flex-direction: column;

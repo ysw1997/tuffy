@@ -40,7 +40,7 @@ function App() {
     {/* <Link to="/"><LogoImg src={tuffyLogo} alt="logo" /></Link>
         <PlaneImg src={plane} /> */}
     <div className="App">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Switch>
         <Route path="/art">
           <Art />

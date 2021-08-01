@@ -8,6 +8,7 @@ import jukeboxStatic from '../assets/images/music/jukeboxStatic.png'
 import jukeboxActive from '../assets/images/music/jukeboxActive.gif'
 import { BsFillPlayFill, BsFillPauseFill } from 'react-icons/bs'
 import letItRain from '../assets/songs/letItRain.wav'
+import countOnMe from '../assets/songs/CountOnMe.wav'
 import imATiger from '../assets/songs/imATiger.wav'
 import mommyAndMe from '../assets/songs/mommyAndMe.wav'
 import ReactAudioPlayer from 'react-audio-player';
@@ -141,14 +142,15 @@ text-decoration:none;
 export const PlaneImg=styled.img`
 position: absolute;
 top:50px;
-left:70px;
-width:80%;
+left:0px;
+width:100%;
+z-index:500;
 `
 
 function Music() {
     const [showGif, setGif] = useState(false)
     const [songs,setSongs] =useState([
-        { title: "I'm A Tiger", isPlaying:false, src:imATiger, audio:new Audio(imATiger)},
+        { title: "Count On Me", isPlaying:false, src:countOnMe, audio:new Audio(countOnMe)},
         { title: "Mommy & Me", isPlaying: false, src: mommyAndMe, audio: new Audio(mommyAndMe) },
         { title: "Let It Rain", isPlaying: false, src: letItRain, audio: new Audio(letItRain)}
     ])

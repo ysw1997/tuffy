@@ -17,6 +17,7 @@ import google from "../assets/images/google.png"
 import amazon from "../assets/icons/amazon.png"
 import itunes from "../assets/icons/itunes.svg"
 import spotify from "../assets/icons/spotify.png"
+import tuffyicon from "../assets/images/tuffyicon.png"
 
 
 
@@ -55,7 +56,7 @@ margin-right:10px;
   border-radius: 15px;
 padding-bottom:10px;
 // padding-top:10px;
-min-height:160px;
+// min-height:160px;
 
 `
 const TitleImg = styled.img`
@@ -63,7 +64,7 @@ margin-top:20px;
 // float:left;
 width:400px;
 // margin-top:50px;
-max-height:200px;
+height:200px;
 //   margin-left:20px;
 margin-right:10px;
 
@@ -87,13 +88,29 @@ const Google = styled.img`
 // margin-left:50px;
 margin-top:20px;
 width:250px;
+height:80px;
 `
 const Store = styled.img`
-width:200px;
+// width:200px;
 margin-right:30px;
 margin-top:10px;
+height:80px;
 
-
+`
+const SongImg = styled.img`
+margin-top:-7px;
+// float:left;
+width:400px;
+// margin-top:50px;
+height:200px;
+//   margin-left:20px;
+margin-right:10px;
+`
+const Devide = styled.img`
+height:200px;
+left:35%;
+position:relative;
+margin-bottom:5px;
 `
 function ParentTeacher() {
     return (
@@ -102,7 +119,7 @@ function ParentTeacher() {
             <Link to="/"><LogoImg src={tuffyLogo} alt="logo" /></Link>
             <PlaneImg src={plane} />
             <div className="logo">
-                <Img src={tuffyLogo} alt="tuffyLogo" />
+                {/* <Img src={tuffyLogo} alt="tuffyLogo" /> */}
             </div>
             <Sidebar />
             {/* <Footer /> */}
@@ -124,17 +141,21 @@ function ParentTeacher() {
                 <p>
                     Below are a few Tuffytastic resources that promise to engage and inspire your young tigers! 
                 </p>
-                <br />
+                <Devide src={tuffyicon} />
+                {/* <br />
+                <br /> */}
                 <Resources>
                     <TitleImg src= {newsletter} />
+                    <br />
                     <P>
+                        
                 
 As an ambassador to parents and teachers, Tuffy Tiger helps to emphasize educational goals, healthy choices, and social principles through multimedia resources kids and parents love! 
 Spark creativity and engage family fun with the Tuffytastic E-Newsletter and stay up-to-date on all Tuffy Tiger music, videos, crafts, and news!
                     </P>
                 </Resources>
                 <Resources>
-                    <TitleImg src={titleCd} />
+                    <SongImg src={titleCd} />
                    <P>
                         Tuffy Tiger’s first album filled with 10 fun and empowering songs including 5 instrumentals perfect for classroom sing-a-longs. Purchase the album through these stores.
 
@@ -147,7 +168,7 @@ Spark creativity and engage family fun with the Tuffytastic E-Newsletter and sta
                     <TitleImg src={puzzle} />
 
                     <P>
-                    
+                        <br />
                         Colorful puzzles featuring the almost five Tuffy Tiger! Easy to slide into place using silhouette photo in the background with playful music and sounds!
                                                  <br />
                         <a href='https://play.google.com/store/apps/details?id=appinventor.ai_aribitowsky.TuffyApp&hl=en_US&gl=US'> <Google src={google} /></a>
@@ -156,6 +177,7 @@ Spark creativity and engage family fun with the Tuffytastic E-Newsletter and sta
                 <Resources>
                     <TitleImg src={jellybean} />
                     <P>
+                        <br />
                         Tuffy Tiger can't wait for you to try out Jelly Bean Jam! It's a game filled with action and strategy making it fun for all ages!
 
                          <br />
@@ -165,21 +187,23 @@ Spark creativity and engage family fun with the Tuffytastic E-Newsletter and sta
                 </P>
                 </Resources>
                 <Resources>
-                <p>
+                <P>
                         Tuffy Tiger Worksheets 
                         From puppet making to games to drawing and coloring, these worksheets provide young tigers with opportunities to play, think, and create!
 
                         View & Download (worksheet page link)
-                </p>
+                </P>
                 </Resources>
                 <Resources>
                     <TitleImg src={sendmail} />
-                Letters To Tuffy
-                Following standards found within STEAM, teachers are encouraged to empower students to write letters to Tuffy expressing their thoughts and feelings through words and coloring pictures about their experience watching Tuffy’s videos, singing with Tuffy, or making puppets and crafts. 
+                    <br />
+                <P>
+                        Following standards found within STEAM, teachers are encouraged to empower students to write letters to Tuffy expressing their thoughts and feelings through words and coloring pictures about their experience watching Tuffy’s videos, singing with Tuffy, or making puppets and crafts. 
 
-                All letters, as a class, will receive a reply from Tuffy with a Tuffytastic surprise for each student! 
+                        All letters, as a class, will receive a reply from Tuffy with a Tuffytastic surprise for each student! 
 
-                Download Letter (letter link here- it should be in the download worksheet page)
+                        Download Letter (letter link here- it should be in the download worksheet page)
+                </P>
                 </Resources>
 <div class="ctct-inline-form" data-form-id="3fd6f4db-243b-48d4-9612-f01ceebebae0"></div>
 
