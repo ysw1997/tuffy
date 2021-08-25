@@ -1,6 +1,9 @@
 import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import styled from 'styled-components';
+import './Sidebar.css'
+
+
 
 function toFacebook () {
   window.open('http://Facebook.com/')
@@ -19,7 +22,8 @@ function toInstagram() {
 function Footer() {
 const Footer= styled.footer`
 background-color:#8DF67B;
-position: fixed;
+position: relative;
+margin: 0 auto 0 auto;
 font-size:10px;
 bottom: 0;
 width: 100%;
@@ -52,26 +56,37 @@ margin-right:90px;
 Text goes across or stacked NOT a pyramid
             </Lefttext>
 
- 
 
 <SocialIcon
+className="my-social-icon"
+bgColor = 'transparent'
   onClick={toFacebook}
-  
+  fgColor = 'black'
   network="facebook"
 />
 
+
 <SocialIcon
+className="my-social-icon"
+bgColor = 'transparent'
+fgColor = 'black'
 onClick ={toYoutube}
   network='youtube'
 />
 
 <SocialIcon
+className="my-social-icon"
+bgColor = 'transparent'
+fgColor = 'black'
   onClick={toInstagram}
   network="instagram"
 />
-  
+
 
 <SocialIcon
+bgColor = 'transparent'
+fgColor = 'black'
+className="my-social-icon"
   onClick={toLinkedin}
   network="linkedin"
 />

@@ -25,3 +25,11 @@ img {
 background:blue; */
 
 }
+
+.my-social-icon .social-svg {
+  color: #000000;
+}
+.my-social-icon .social-svg:hover {
+  color: #55acee;
+  background: white;
+}

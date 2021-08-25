@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import styled from 'styled-components';
 import { Link} from 'react-router-dom';
 import './Sidebar.css'
@@ -36,6 +36,33 @@ background-color:#FF7990;
   margin:10px;
   border-radius: 15px;
 `
+{/* 
+  
+
+function DetectHover(props){
+  const [hover,sethover] = useState(false)
+  return(
+    <div
+      onMouseOver={()=> sethover(true)}
+      onMouseDown={()=> sethover(false)}
+    >
+      {props.render(hover)}
+    </div>
+  )
+};
+function Siderbar(props){
+  function render(hover){
+    const style = {
+      src : hover? musicStatic:musicActive
+    };
+    return (
+      <div></div>
+    )
+
+  }
+}
+*/}
+
 
 const Sidebar =() =>{
 

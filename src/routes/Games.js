@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { Img } from './Home'
 
 
+
 const GamesWrapper = styled(ChildPageWrapper)`
 background-color: #E7CEF6;
 `

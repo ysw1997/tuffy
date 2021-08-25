@@ -89,7 +89,9 @@ export const Image1= styled.img`
 
 
 
-
+  const downloadFile = () => {
+      window.location.href = "hhttp://localhost:3000/static/media/step2.d733052a.jpg"
+    }
 
 
 
@@ -168,11 +170,11 @@ Download Tuffytastic Worksheets!
 <div className="wrapper">
 <a className="prev" onClick={scroll1.bind(null,-1)}>&#10094;</a>
   <div className="image-container2">
-    <div className ="Imageandbutton">       
-         <Image1 onClick={()=>setactive("firstWorksheet")} className = "Image"  src ={Makeicon1} onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}/>
+    <div className ="Imageandbutton"  onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>       
+         <Image1 onClick={()=>setactive("firstWorksheet")} className = "Image"  src ={Makeicon1}/>
          
 
-         <div>{show && (<button className="handl btn " >
+         <div>{show && (<button onClick={downloadFile} className="handl btn " >
             Click to download the worksheet
           </button>) }
           </div>
