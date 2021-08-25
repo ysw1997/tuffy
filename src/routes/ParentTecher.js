@@ -100,7 +100,7 @@ height:80px;
 const SongImg = styled.img`
 margin-top:-7px;
 // float:left;
-width:400px;
+// width:400px;
 // margin-top:50px;
 height:200px;
 //   margin-left:20px;
